@@ -14,15 +14,15 @@ def _start(client, message):
             [
                 [
                     InlineKeyboardButton(
-                        "➕ Add me to your Group ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
+                        "➕ 𝙽𝙰𝙽𝚄 𝙰𝙳𝙳 𝙲𝙷𝙴𝚂𝚄 𝙺𝙾𝙽𝙳𝙸 ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
                 [
                     InlineKeyboardButton(
-                        "👥 Group", url=f"https://t.me/{SUPPORT_GROUP}"), 
+                        "👥 𝚂𝙰𝙽𝚃𝙷𝙾𝚂𝙷 𝙽𝙴𝚃𝚆𝙾𝚁𝙺", url=f"https://t.me/{SUPPORT_GROUP}"), 
                     InlineKeyboardButton(
-                        "Channel 📢", url=f"https://t.me/{UPDATES_CHANNEL}")
+                        "𝚂𝙰𝙽𝚃𝙷𝚄 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 📢", url=f"https://t.me/{UPDATES_CHANNEL}")
                 ],[
                     InlineKeyboardButton(
-                        "🔥 Source Code 🔥", url=f"https://{SOURCE_CODE}")
+                        "🔥 Source Code 🔥", url=f"https://t.me/newsstreamer")
                 ]
             ]
         ),
@@ -37,15 +37,15 @@ async def gstart(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "💬 Support Chat", url=f"https://t.me/{SUPPORT_GROUP}"
+                        "💬 Santhu Chat", url=f"https://t.me/{SUPPORT_GROUP}"
                     )
                 ],    
                 [    
                     InlineKeyboardButton(
-                        "🔎 Search YT", switch_inline_query_current_chat=""
+                        "🧐 Search YT", switch_inline_query_current_chat=""
                     ),
                     InlineKeyboardButton(
-                        "Close ❌", callback_data="close"
+                        "Close 👻", callback_data="close"
                     )
                 ]
             ]
@@ -80,15 +80,15 @@ def help_answer(client, callback_query):
 def map(pos):
     if(pos==1):
         button = [
-            [InlineKeyboardButton(text = '▶️ Next', callback_data = "help+2")]
+            [InlineKeyboardButton(text = '😁 Next', callback_data = "help+2")]
         ]
     elif(pos==len(tr.HELP_MSG)-1):
         url = f"https://t.me/{SUPPORT_GROUP}"
         button = [
-            [InlineKeyboardButton("➕ Add me to your Group ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
-            [InlineKeyboardButton(text = '👥 Group', url=f"https://t.me/{SUPPORT_GROUP}"),
-             InlineKeyboardButton(text = 'Channel 📢', url=f"https://t.me/{UPDATES_CHANNEL}")],
-            [InlineKeyboardButton(text = '🔥 Source Code 🔥', url=f"https://{SOURCE_CODE}")],
+            [InlineKeyboardButton("➕ 𝙽𝙰𝙽𝚄 𝙰𝙳𝙳 𝙲𝙷𝙴𝚂𝚄 𝙺𝙾𝙽𝙳𝙸 ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
+            [InlineKeyboardButton(text = '👥 𝚂𝙰𝙽𝚃𝙷𝙾𝚂𝙷 𝙽𝙴𝚃𝚆𝙾𝚁𝙺', url=f"https://t.me/{SUPPORT_GROUP}"),
+             InlineKeyboardButton(text = ' 𝚂𝙰𝙽𝚃𝙷𝚄 Channel 📢', url=f"https://t.me/{UPDATES_CHANNEL}")],
+            [InlineKeyboardButton(text = '🔥 Source Code 🔥', url=f"https://t.me/newsstreamer")],
             [InlineKeyboardButton(text = '◀️ Back', callback_data = f"help+{pos-1}")]
         ]
     else:

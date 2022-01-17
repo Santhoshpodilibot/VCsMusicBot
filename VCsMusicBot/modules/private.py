@@ -100,7 +100,7 @@ def map(pos):
         ]
     return button
 
-@Client.on_message(filters.command(["help","help@VCsMusicBot"]) & ~filters.private & ~filters.channel)
+@Client.on_message(filters.command(["help","help@newsstreamer"]) & ~filters.private & ~filters.channel)
 async def ghelp(_, message: Message):
     await message.reply_text(
         f"""**Hello there! 𝙽𝙴𝙽𝚄 𝙼𝚄𝚂𝙸𝙲 𝙿𝙻𝙰𝚈 𝙲𝙷𝙴𝚂𝚃𝙰 groups & channels 𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 😃 @santhu_music_bot.**""",
